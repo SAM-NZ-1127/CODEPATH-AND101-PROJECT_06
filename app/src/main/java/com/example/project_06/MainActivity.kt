@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun fetchPokemonData() {
         val client = AsyncHttpClient()
-        val apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=25"
+        val apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=50"
 
         client.get(apiUrl, object : JsonHttpResponseHandler() {
             override fun onSuccess(statusCode: Int, headers: Headers?, json: JsonHttpResponseHandler.JSON) {
